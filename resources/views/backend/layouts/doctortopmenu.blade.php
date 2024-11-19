@@ -143,7 +143,7 @@
 							</li>
 							<li class="divider"></li>
 							<li>
-								<form action="{{route('admin.logout')}}" method="post">
+								<form action="{{route('doctor.logout')}}" method="post">
 									@csrf
 									<button type="submit" ><i class="fa fa-fw fa-power-off"></i>Log out</button>
 

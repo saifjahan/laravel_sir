@@ -40,6 +40,9 @@
 									<div class="panel-heading">
 										<div class="pull-left">
 											<h6 class="panel-title txt-dark">Sign In</h6>
+											@if($errors->has('email'))
+											<div class="alert alert-danger">{{$errors->first('email')}}</div>
+											@endif
 										</div>
 										<div class="clearfix"></div>
 									</div>
@@ -53,14 +56,14 @@
 															<div class="form-group">
 																<label class="control-label mb-10" for="exampleInputEmail_2">Email address</label>
 																<div class="input-group">
-																	<input type="email" class="form-control" required="" id="exampleInputEmail_2" placeholder="Enter email">
+																	<input type="email" name="email" class="form-control" required="" id="exampleInputEmail_2" placeholder="Enter email">
 																	<div class="input-group-addon"><i class="icon-envelope-open"></i></div>
 																</div>
 															</div>
 															<div class="form-group">
 																<label class="control-label mb-10" for="exampleInputpwd_2">Password</label>
 																<div class="input-group">
-																	<input type="password" class="form-control" required="" id="exampleInputpwd_2" placeholder="Enter pwd">
+																	<input type="password" name="password" class="form-control" required="" id="exampleInputpwd_2" placeholder="Enter pwd">
 																	<div class="input-group-addon"><i class="icon-lock"></i></div>
 																</div>
 															</div>
