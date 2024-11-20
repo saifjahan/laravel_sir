@@ -11,7 +11,7 @@
     <meta name="author" content="hencework" />
     @include('backend.layouts.css_file')
 </head>
-
+@yield('css')
 <body>
 
     <div class="wrapper">
@@ -46,7 +46,7 @@
     <!-- /#wrapper -->
 
     <!-- JavaScript -->
-    @include('backend.layouts.js_file')
+   @yield('js')
 
 
 </body>
